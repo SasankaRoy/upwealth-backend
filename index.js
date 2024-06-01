@@ -13,8 +13,8 @@ dotenv.config();
 // MIDDLEWARES
 app.use(cors({
     exposedHeaders:['token'],
-    origin:['http://localhost:3000','https://upwealth.vercel.app/'],
-    credentials:true,
+    origin:['http://localhost:3000','https://upwealth.vercel.app'],
+    
 }));
 app.use(cookieParser());
 app.use(express.urlencoded({extended:false}));
